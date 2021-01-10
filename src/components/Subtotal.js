@@ -10,9 +10,14 @@ function Subtotal() {
 
     const proceedToCheckout = e => {
         if (user) {
-            history.push('/payment');
+            if (basket.length > 0) {
+                history.push('/payment');
+            }
+            else {
+                alert('Add items to basket');
+            }
         } else {
-            alert('Please login');
+            alert('Please Signin');
         }
     }
     return (
@@ -21,7 +26,6 @@ function Subtotal() {
                 renderText={(value) => (
                     <>
                         <p>
-
                             Subtotal ({basket?.length} items): <strong>{value}</strong>
                         </p>
                         <small className="subtotal__gift">
