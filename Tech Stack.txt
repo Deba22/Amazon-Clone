@@ -1,0 +1,8 @@
+1. Firebase Authentication
+2. Firebase firestore
+3. React + React Context API
+4. Material UI
+5. Firebase hosting
+6. Stripe Payment
+7. Cloud function
+
